@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadiantRings - Wedding Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>RadiantRings</h1>
+    <p>Your Dream Wedding Planner</p>
+  </header>
+
+  <div id="ar-container">
+    <canvas id="ar-canvas"></canvas>
+    <div id="ar-content"></div>
+  </div>
+
+  <div id="controls">
+    <div class="control-item">
+      <img src="../ArGroup/assets/targets/elegant.png" alt="Elegant Wedding" class="target-image" id="target-image-1">
+      <button class="youtube-btn" id="youtube-btn-1" data-video-id="8qcVUL5Bs8c">Elegant Wedding</button>
+    </div>
+    <div class="control-item">
+      <img src="../ArGroup/assets/targets/grand.png" alt="Grand Wedding" class="target-image" id="target-image-2">
+      <button class="youtube-btn" id="youtube-btn-2" data-video-id="5gkFmR3iFkQ">Grand Wedding</button>
+    </div>
+    <div class="control-item">
+      <img src="../ArGroup/assets/targets/outdoor.png" alt="Outdoor Wedding" class="target-image" id="target-image-3">
+      <button class="youtube-btn" id="youtube-btn-3" data-video-id="adf1hZ6IR2o">Outdoor Wedding</button>
+    </div>
+  </div>
+  <div class="control-item">
+    <img src="../ArGroup/assets/targets/romantic.png" alt="Romantic Wedding" class="target-image" id="target-image-4">
+    <button class="youtube-btn" id="youtube-btn-4" data-video-id="Qr4mwsdLHk0">Romantic Wedding</button>
+  </div>
+</div>
+
+  <div id="ar-div" style="display: none;">
+    <div id="player"></div>
+  </div>
+
+  <footer>
+    <p>© 2024 RadiantRings. All rights reserved.</p>
+  </footer>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="../ArGroup/libs/mindar/mindar-image-three.prod.js"></script>
+  <script src="./main.js" type="module"></script>
+</body>
+</html>

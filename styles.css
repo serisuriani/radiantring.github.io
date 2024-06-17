@@ -1,0 +1,144 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf5f5;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    color: #b3996b;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 18px;
+    color: #8c8c8c;
+    margin: 5px 0 0;
+  }
+  
+  #ar-container {
+    width: 80%;
+    height: 60vh;
+    background-color: #e3dcd3;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    z-index: 0;
+  }
+  
+  #ar-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #ar-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  #controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .control-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .target-image {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 2px solid #b3996b;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .target-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .youtube-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #b3996b;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .youtube-btn:hover {
+    background-color: #96794b;
+  }
+  
+  #ar-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #player {
+    width: 640px;
+    height: 360px;
+  }
+  
+  footer {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #8c8c8c;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    #ar-container {
+      width: 95%;
+      height: 50vh;
+    }
+  
+    #player {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
